@@ -24,6 +24,7 @@ public class produce {
         UUID uuid = UUID.randomUUID();
         String s = zooKeeper.create("/service/ip", uuid.toString().getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
         return s;
+
     }
 
 }
