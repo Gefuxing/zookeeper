@@ -1,0 +1,19 @@
+
+
+#Redis·þÎñÆ÷µØÖ·
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: 192.168.83.128
+    port: 6379
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+
